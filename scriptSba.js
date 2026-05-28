@@ -2,13 +2,163 @@
 
 /*
 const Gen1poke = [ 
-{ id: "",
+{ id: ,
  name: "",
  type: "",
- level: "",
- abilitiies: ""'
+ level: ,
+ abilitiies: ""
 
 }
 ]
-
 */
+// find out if you can add images to arrays-yes
+// should i add evolutions in arrays
+//should i make this a separate page
+//use split method on string (abilities)
+
+
+const Gen1poke = [
+    {
+        id: 25,
+        name: "Pikachu",
+        type: "Electric",
+        level: 20,
+        abilities: "Static/Lightening Rod"
+
+    },
+    { id: 1,
+ name: "Bulbasaur",
+ type: "Grass/Poison",
+ level: 24,
+ abilitiies: "Overgrow/Chlorophyll"
+
+},
+{ id: 4,
+ name: "Charmander",
+ type: "Fire",
+ level: 25,
+ abilitiies: "Blaze/Solar Power"
+
+},
+{ id: 7,
+ name: "Squirtle",
+ type: "Water",
+ level: 18,
+ abilitiies: "Torrent/Rain Dish"
+
+},
+{ id: 10,
+ name: "Caterpie",
+ type: "Bug",
+ level: 13,
+ abilitiies: "Shield Dust/Run Away"
+
+},
+{ id: 16,
+ name: "Pidgey",
+ type: "Normal/Flying",
+ level: 20,
+ abilitiies: "Keen Eye/Tangled Feet/Bug Pecks"
+
+},
+{ id: 19,
+ name: "Rattata",
+ type: "Normal",
+ level: 15,
+ abilitiies: "Run Away/Guts/Hustle"
+
+},
+{ id: 27,
+ name: "Sandshrew",
+ type: "Ground",
+ level: 21,
+ abilitiies: "Sand Veil/Sand Rush"
+
+},
+{ id: 29,
+ name: "Nidoran(F)",
+ type: "Poison",
+ level: 22,
+ abilitiies: "Poison Point/Rivalry/Hustle"
+
+},
+{ id: 32,
+ name: "Nidoran(M)",
+ type: 22,
+ level: "Poison",
+ abilitiies: "Poison Point/Rivalry/Hustle"
+
+},
+{ id: 35,
+ name: "Clefairy",
+ type: "Fairy",
+ level: 25,
+ abilitiies: "Cute Charm/Magic Guard/Friend Guard"
+
+},
+{ id: 37,
+ name: "Vulpix",
+ type: "Fire",
+ level: "26",
+ abilitiies: "Flash Fire/Drought"
+
+},
+{ id: 52,
+ name: "Meowth",
+ type: "Normal",
+ level: 17,
+ abilitiies: "Pick Up/Technician/Unnerve"
+
+},
+{ id: 54,
+ name: "Psyduck",
+ type: "Water",
+ level: "22",
+ abilitiies: "Damp/Cloud Nine/Swift Swim"
+
+},
+//current count 14 pokemon
+{ id: 130,
+ name: "Gyrados",
+ type: "Water/Flying",
+ level: 26,
+ abilitiies: ""
+
+},
+{ id: 133 ,
+ name: "Eevee",
+ type: "Normal",
+ level: 24,
+ abilitiies: "Run Away/Adaptability/Anticipation"
+
+},
+{ id: 147 ,
+ name: "Dratini",
+ type: "Dragon",
+ level: 21,
+ abilitiies: "Shed Skin/Marvel Scale"
+
+},
+{ id: 106,
+ name: "Hitmonlee",
+ type: "Fight",
+ level: 27,
+ abilitiies: "Limber/Reckless/Unburden"
+
+},
+{ id: 56,
+ name: "Mankey",
+ type: "Fight",
+ level: 24,
+ abilitiies: "Vital Spirit/Anger Point/Defiant"
+
+},
+{ id: 74,
+ name: "Geodude",
+ type: "Rock/Ground",
+ level: 21,
+ abilitiies: "Rock Head/Sturdy/Sand Veil"
+
+}
+]
+//20 total
