@@ -90,8 +90,8 @@ const Gen1poke = [
 },
 { id: 32,
  name: "Nidoran(M)",
- type: 22,
- level: "Poison",
+ type: "Posion",
+ level: 22,
  abilitiies: "Poison Point/Rivalry/Hustle"
 
 },
@@ -147,14 +147,14 @@ const Gen1poke = [
 },
 { id: 106,
  name: "Hitmonlee",
- type: "Fight",
+ type: "Fighting",
  level: 27,
  abilitiies: "Limber/Reckless/Unburden"
 
 },
 { id: 56,
  name: "Mankey",
- type: "Fight",
+ type: "Fighting",
  level: 24,
  abilitiies: "Vital Spirit/Anger Point/Defiant"
 
@@ -185,6 +185,10 @@ array.forEach((item) =>{
 const pokemonDatabase = []
 // loop through pokemon database to display it 
 Gen1poke.forEach((pokemon) =>{
-    console.log(pokemon);
-})
+    //console.log(`${pokemon.name} is a ${pokemon.type} type`);
+    console.log(pokemon.name);
+    });
 
+    // need to create a pokemon info card
+    
+    const card = document.createElement("div")
