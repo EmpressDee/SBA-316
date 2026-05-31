@@ -23,42 +23,48 @@ const Gen1poke = [
         name: "Pikachu",
         type: "Electric",
         level: 20,
-        abilities: "Static/Lightening Rod"
+        abilities: "Static/Lightening Rod",
+        image:""
 
     },
     { id: 1,
  name: "Bulbasaur",
  type: "Grass/Poison",
  level: 24,
- abilitiies: "Overgrow/Chlorophyll"
+ abilitiies: "Overgrow/Chlorophyll",
+ image:""
 
 },
 { id: 4,
  name: "Charmander",
  type: "Fire",
  level: 25,
- abilitiies: "Blaze/Solar Power"
+ abilitiies: "Blaze/Solar Power",
+ image:""
 
 },
 { id: 7,
  name: "Squirtle",
  type: "Water",
  level: 18,
- abilitiies: "Torrent/Rain Dish"
+ abilitiies: "Torrent/Rain Dish",
+ image:""
 
 },
 { id: 10,
  name: "Caterpie",
  type: "Bug",
  level: 13,
- abilitiies: "Shield Dust/Run Away"
+ abilitiies: "Shield Dust/Run Away",
+ image:""
 
 },
 { id: 16,
  name: "Pidgey",
  type: "Normal/Flying",
  level: 20,
- abilitiies: "Keen Eye/Tangled Feet/Bug Pecks"
+ abilitiies: "Keen Eye/Tangled Feet/Bug Pecks",
+ image:""
 
 },
 { id: 19,
@@ -162,3 +168,23 @@ const Gen1poke = [
 }
 ]
 //20 total
+
+/* array.forEach(function(item){
+    something happens
+});
+
+or arrow function
+
+array.forEach((item) =>{
+    something happens
+    
+    })
+*/
+
+//store pokemon
+const pokemonDatabase = []
+// loop through pokemon database to display it 
+Gen1poke.forEach((pokemon) =>{
+    console.log(pokemon);
+})
+
