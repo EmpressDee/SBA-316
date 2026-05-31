@@ -16,7 +16,9 @@ const Gen1poke = [
 //use split method on string (abilities) const ability = pokemon.abilities.split() ***check mdn to verify method***
 // cache requirement.
 
-const container = document.getElementById("pokemonContainer")
+//const container = document.getElementById("pokemonContainer")
+const pokemonList = document.getElementById("pokeList");
+const pokemonCard = document.getElementById("pokeCards")
 
 const Gen1poke = [
     {
@@ -184,15 +186,28 @@ array.forEach((item) =>{
 
 //store pokemon
 const pokemonDatabase = []
+const container = document.getElementById("pokemonContainer");
 // loop through pokemon database to display it 
 Gen1poke.forEach((pokemon) =>{
-    //console.log(`${pokemon.name} is a ${pokemon.type} type`);
-    console.log(pokemon.name); // no longer need since its working
+   // need to create a pokemon info card
+    
+    const card = document.createElement("div");
+
+    const name = document.createElement("h2");
+
+    const type = document.createElement("p");
+
+    const level = document.createElement("p");
+
+    const abilities = document.createElement("p");
+
+    card.append(name, type, level, abilities);
+
+    container.appendChild(card)
     });
 
-    // need to create a pokemon info card
+   
     
-    const card = document.createElement("div")
 
     /* create other html elements
      card = div
@@ -201,5 +216,6 @@ Gen1poke.forEach((pokemon) =>{
      level = p
      abilities = p */
 
-    const container = document.getElementById("pokemonContainer");
+    
+
 
