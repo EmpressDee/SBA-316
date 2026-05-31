@@ -11,11 +11,12 @@ const Gen1poke = [
 }
 ]
 */
-// find out if you can add images to arrays-yes
 // should i add evolutions in arrays
 //should i make this a separate page
-//use split method on string (abilities)
+//use split method on string (abilities) const ability = pokemon.abilities.split() ***check mdn to verify method***
+// cache requirement.
 
+const container = document.getElementById("pokemonContainer")
 
 const Gen1poke = [
     {
@@ -186,9 +187,19 @@ const pokemonDatabase = []
 // loop through pokemon database to display it 
 Gen1poke.forEach((pokemon) =>{
     //console.log(`${pokemon.name} is a ${pokemon.type} type`);
-    console.log(pokemon.name);
+    console.log(pokemon.name); // no longer need since its working
     });
 
     // need to create a pokemon info card
     
     const card = document.createElement("div")
+
+    /* create other html elements
+     card = div
+     name = h2
+     type = p 
+     level = p
+     abilities = p */
+
+    const container = document.getElementById("pokemonContainer");
+
