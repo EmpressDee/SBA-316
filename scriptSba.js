@@ -90,7 +90,7 @@ const Gen1poke = [
 },
 { id: 32,
  name: "Nidoran(M)",
- type: "Posion",
+ type: "Poison",
  level: 22,
  abilities: "Poison Point/Rivalry/Hustle"
 
@@ -105,7 +105,7 @@ const Gen1poke = [
 { id: 37,
  name: "Vulpix",
  type: "Fire",
- level: "26",
+ level: 26,
  abilities: "Flash Fire/Drought"
 
 },
@@ -119,7 +119,7 @@ const Gen1poke = [
 { id: 54,
  name: "Psyduck",
  type: "Water",
- level: "22",
+ level: 22,
  abilities: "Damp/Cloud Nine/Swift Swim"
 
 },
@@ -128,7 +128,7 @@ const Gen1poke = [
  name: "Gyrados",
  type: "Water/Flying",
  level: 26,
- abilities: ""
+ abilities: "Intimidate/Moxie"
 
 },
 { id: 133 ,
@@ -191,13 +191,44 @@ const pokemonContainer = document.getElementById("pokemonContainer");
 const pokemonList = document.getElementById("pokeList");
 const pokemonCard = document.getElementById("pokeCards");
 
+const searchPokemon = document.getElementById("searchPokemon");
+
+
+
 //const ability = pokemon.abilities.split("/"); //error -forgot to add a pokemon variable, maybe make a display function and put it there instead
 // loop through pokemon database to display it 
-Gen1poke.forEach((pokemon) =>{
-   // need to create a pokemon info card
+
+//comment out because when ran it shows a long list of pokemon. Just wanted it displayed when button is pressed.
+// Gen1poke.forEach((pokemon) =>{
+//    // need to create a pokemon info card
     
-    const card = document.createElement("div");
+//     const card = document.createElement("div");
     
+
+//     const name = document.createElement("h2");
+//     name.textContent = pokemon.name;
+
+//     const type = document.createElement("p");
+//     type.textContent = `Type: ${pokemon.type}`;
+
+//     const level = document.createElement("p");
+//     level.textContent = `Level: ${pokemon.level}`;
+
+//     const abilities = document.createElement("p");
+//     abilities.textContent = `Abilities: ${pokemon.abilities}`;
+
+//     card.append(name, type, level, abilities);
+
+//     pokemonContainer.appendChild(card) //wasnt displaying becasue i put container instead of pokemonContainer
+//     });
+// need a button to click through each pokemon
+
+    // function displayPokemon(pokemon) {
+    //     console.log(pokemon.name);
+    // }
+    function displayPokemon(pokemon) {
+
+    pokemonCard.innerHTML = "";
 
     const name = document.createElement("h2");
     name.textContent = pokemon.name;
@@ -209,18 +240,54 @@ Gen1poke.forEach((pokemon) =>{
     level.textContent = `Level: ${pokemon.level}`;
 
     const abilities = document.createElement("p");
-    abilities.textContent = `Abilities: ${pokemon.abilities}`;
+    abilities.textContent =
+        `Abilities: ${pokemon.abilities}`;
+    
+    const addButton = document.createElement("button");
+    addButton.textContent = "Add To Team";
 
-    card.append(name, type, level, abilities);
+    addButton.addEventListener("click", (e) => addTeam(pokemon));
+    pokemonCard.append(name, type, level, abilities, addButton);
 
-    pokemonContainer.appendChild(card) //wasnt displaying becasue i put container instead of pokemonContainer
-    });
-// need a button to click through each pokemon
+    pokemonCard.append(
+        name,
+        type,
+        level,
+        abilities
+    );
+}
 
-    function displayPokemon(pokemon) {
-        console.log(pokemon.name);
+let team = [];
+
+function addTeam(pokemon) {
+    if (team.length >=6) {
+        alert("Your team is full")
+
+        return;
     }
+    team.push(pokemon);
+ const removeButton = document.createElement("button");
+ removeButton.addEventListener("click", (e) => {
+    team = team.filter(p => p.id !== pokemon.id); // *note to future self* using p as a variable for filter method
+ })
+    displayTeam();
+}
 
+function displayTeam() {
+    teamContainer.innerHTML = "";
+    const fragment = document.createDocumentFragment(); //requirement
+
+    team.forEach((pokemon) => {
+
+        const teamMember = document.createElement("p");
+
+        teamMember.textContent = pokemon.name;
+
+        teamContainer.appendChild(teamMember);
+    })
+}
+
+// creating button for pokemon
     Gen1poke.forEach((pokemon) => {
         const button = document.createElement("button");
 
@@ -230,9 +297,17 @@ Gen1poke.forEach((pokemon) =>{
             displayPokemon(pokemon); // error forgot to add the display function
         });
         pokemonList.appendChild(button)
+    });
+
+// second event listener req
+    searchPokemon.addEventListener("input", (e) => {
+
+        const search = searchPokemon.value.toLowerCase();
+
+        console.log(search);
     })
-   
-    
+   //  :( 
+    // Search how to not have 20 buttons and 20 cards. Want one card to update when pokemon button is clicked.
 
     /* create other html elements
      card = div
