@@ -1,0 +1,53 @@
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #f00d09;
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(227,53,13,0.12) 0%, transparent 40%),
+    radial-gradient(circle at 80% 80%, rgba(26,110,168,0.12) 0%, transparent 40%);
+  min-height: 100vh;
+  
+}
+
+
+
+
+#teamContainer {
+    border: 3px solid black;
+    min-height: 200px;
+    padding: 10px;
+}
+
+#pokeList button {
+    display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 10px;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  text-align: left;
+  width: 100%;
+}
+
+
+
+#pokeCards {
+    border: 2px solid black;
+    padding: 10px;
+    min-height: 200px;
+}
+
+#pokeList {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  max-height: 460px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
