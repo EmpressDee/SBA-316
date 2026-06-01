@@ -191,7 +191,7 @@ const pokemonContainer = document.getElementById("pokemonContainer");
 const pokemonList = document.getElementById("pokeList");
 const pokemonCard = document.getElementById("pokeCards");
 
-const ability = pokemon.abilities.split("/");
+//const ability = pokemon.abilities.split("/"); //error -forgot to add a pokemon variable, maybe make a display function and put it there instead
 // loop through pokemon database to display it 
 Gen1poke.forEach((pokemon) =>{
    // need to create a pokemon info card
@@ -206,16 +206,20 @@ Gen1poke.forEach((pokemon) =>{
     type.textContent = `Type: ${pokemon.type}`;
 
     const level = document.createElement("p");
-    type.textContent = `Level: ${pokemon.level}`;
+    level.textContent = `Level: ${pokemon.level}`;
 
     const abilities = document.createElement("p");
-    type.textContent = `Abilities: ${pokemon.abilities}`;
-    
+    abilities.textContent = `Abilities: ${pokemon.abilities}`;
+
     card.append(name, type, level, abilities);
 
-    container.appendChild(card)
+    pokemonContainer.appendChild(card) //wasnt displaying becasue i put container instead of pokemonContainer
     });
 // need a button to click through each pokemon
+
+    function displayPokemon(pokemon) {
+        console.log(pokemon.name);
+    }
 
     Gen1poke.forEach((pokemon) => {
         const button = document.createElement("button");
@@ -223,8 +227,9 @@ Gen1poke.forEach((pokemon) =>{
         button.textContent = pokemon.name;
 
         button.addEventListener("click", () =>{
-            
-        })
+            displayPokemon(pokemon); // error forgot to add the display function
+        });
+        pokemonList.appendChild(button)
     })
    
     
