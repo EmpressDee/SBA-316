@@ -12,13 +12,10 @@ const Gen1poke = [
 ]
 */
 // should i add evolutions in arrays
-//should i make this a separate page
 //use split method on string (abilities) const ability = pokemon.abilities.split() ***check mdn to verify method***
 // cache requirement.
 
-//const container = document.getElementById("pokemonContainer")
-const pokemonList = document.getElementById("pokeList");
-const pokemonCard = document.getElementById("pokeCards")
+
 
 const Gen1poke = [
     {
@@ -185,15 +182,24 @@ array.forEach((item) =>{
 */
 
 //store pokemon
-const pokemonDatabase = []
-const container = document.getElementById("pokemonContainer");
+const pokemonDatabase = document.getElementById("pokemonDatabase");
+// container for the users team
+const teamContainer = document.getElementById("teamContainer");
+const pokemonContainer = document.getElementById("pokemonContainer");
+
+//const container = document.getElementById("pokemonContainer")
+const pokemonList = document.getElementById("pokeList");
+const pokemonCard = document.getElementById("pokeCards");
+
 // loop through pokemon database to display it 
 Gen1poke.forEach((pokemon) =>{
    // need to create a pokemon info card
     
     const card = document.createElement("div");
+    name.textContent = pokemon.name;
 
     const name = document.createElement("h2");
+    name.textContent
 
     const type = document.createElement("p");
 
