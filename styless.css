@@ -1,7 +1,7 @@
-
+/*Remember to be consistent with naming*/
 body {
   font-family: 'Nunito', sans-serif;
-  background-color: #f00d09;
+  background-color: #1a1a2e;
   background-image:
     radial-gradient(circle at 20% 20%, rgba(227,53,13,0.12) 0%, transparent 40%),
     radial-gradient(circle at 80% 80%, rgba(26,110,168,0.12) 0%, transparent 40%);
@@ -9,6 +9,11 @@ body {
   
 }
 
+#pokemonDatabase {
+  border: 2px solid black;
+  padding: 10px;
+  margin-bottom: 20px;
+}
 
 
 
@@ -18,8 +23,8 @@ body {
     padding: 10px;
 }
 
-#pokeList button {
-    display: flex;
+#pokemonList button {
+display: flex;
   align-items: center;
   gap: 8px;
   padding: 7px 10px;
@@ -31,23 +36,40 @@ body {
   font-family: 'Nunito', sans-serif;
   font-weight: 700;
   font-size: 13px;
+  color: var(--poke-dark);
   text-align: left;
   width: 100%;
-}
+} 
 
 
-
-#pokeCards {
+#pokemonCards {
     border: 2px solid black;
     padding: 10px;
     min-height: 200px;
 }
 
-#pokeList {
+#pokemonList {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  max-height: 460px;
+  max-height: 300px;
   overflow-y: auto;
   padding-right: 4px;
 }
+ #pokemon
+
+
+/* 
+can use var if you want to define a property once and reuse it anywhere.
+
+look into @property
+
+Basic usage 
+var(--custom-prop);
+
+    With fallback 
+var(--custom-prop,);  empty value as fallback 
+var(--custom-prop, initial);  initial value of the property as fallback 
+var(--custom-prop, red);
+var(--custom-prop, var(--default-value));
+var(--custom-prop, var(--default-value, red)); */
