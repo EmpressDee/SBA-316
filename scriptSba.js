@@ -15,158 +15,155 @@ const Gen1poke = [
 //use split method on string (abilities) const ability = pokemon.abilities.split() ***check mdn to verify method***
 // cache requirement.
 
-
-
 const Gen1poke = [
-    {
-        id: 25,
-        name: "Pikachu",
-        type: "Electric",
-        level: 20,
-        abilities: "Static/Lightening Rod",
-        image:""
-
-    },
-    { id: 1,
- name: "Bulbasaur",
- type: "Grass/Poison",
- level: 24,
- abilities: "Overgrow/Chlorophyll",
- image:""
-
-},
-{ id: 4,
- name: "Charmander",
- type: "Fire",
- level: 25,
- abilities: "Blaze/Solar Power",
- image:""
-
-},
-{ id: 7,
- name: "Squirtle",
- type: "Water",
- level: 18,
- abilities: "Torrent/Rain Dish",
- image:""
-
-},
-{ id: 10,
- name: "Caterpie",
- type: "Bug",
- level: 13,
- abilities: "Shield Dust/Run Away",
- image:""
-
-},
-{ id: 16,
- name: "Pidgey",
- type: "Normal/Flying",
- level: 20,
- abilities: "Keen Eye/Tangled Feet/Bug Pecks",
- image:""
-
-},
-{ id: 19,
- name: "Rattata",
- type: "Normal",
- level: 15,
- abilities: "Run Away/Guts/Hustle"
-
-},
-{ id: 27,
- name: "Sandshrew",
- type: "Ground",
- level: 21,
- abilities: "Sand Veil/Sand Rush"
-
-},
-{ id: 29,
- name: "Nidoran(F)",
- type: "Poison",
- level: 22,
- abilities: "Poison Point/Rivalry/Hustle"
-
-},
-{ id: 32,
- name: "Nidoran(M)",
- type: "Poison",
- level: 22,
- abilities: "Poison Point/Rivalry/Hustle"
-
-},
-{ id: 35,
- name: "Clefairy",
- type: "Fairy",
- level: 25,
- abilities: "Cute Charm/Magic Guard/Friend Guard"
-
-},
-{ id: 37,
- name: "Vulpix",
- type: "Fire",
- level: 26,
- abilities: "Flash Fire/Drought"
-
-},
-{ id: 52,
- name: "Meowth",
- type: "Normal",
- level: 17,
- abilities: "Pick Up/Technician/Unnerve"
-
-},
-{ id: 54,
- name: "Psyduck",
- type: "Water",
- level: 22,
- abilities: "Damp/Cloud Nine/Swift Swim"
-
-},
-//current count 14 pokemon
-{ id: 130,
- name: "Gyrados",
- type: "Water/Flying",
- level: 26,
- abilities: "Intimidate/Moxie"
-
-},
-{ id: 133 ,
- name: "Eevee",
- type: "Normal",
- level: 24,
- abilities: "Run Away/Adaptability/Anticipation"
-
-},
-{ id: 147 ,
- name: "Dratini",
- type: "Dragon",
- level: 21,
- abilities: "Shed Skin/Marvel Scale"
-
-},
-{ id: 106,
- name: "Hitmonlee",
- type: "Fighting",
- level: 27,
- abilities: "Limber/Reckless/Unburden"
-
-},
-{ id: 56,
- name: "Mankey",
- type: "Fighting",
- level: 24,
- abilities: "Vital Spirit/Anger Point/Defiant"
-
-},
-{ id: 74,
- name: "Geodude",
- type: "Rock/Ground",
- level: 21,
- abilities: "Rock Head/Sturdy/Sand Veil"
-
-}
-]
+  {
+    id: 25,
+    name: "Pikachu",
+    type: "Electric",
+    level: 20,
+    abilities: "Static/Lightening Rod",
+    image: "",
+  },
+  {
+    id: 1,
+    name: "Bulbasaur",
+    type: "Grass/Poison",
+    level: 24,
+    abilities: "Overgrow/Chlorophyll",
+    image: "",
+  },
+  {
+    id: 4,
+    name: "Charmander",
+    type: "Fire",
+    level: 25,
+    abilities: "Blaze/Solar Power",
+    image: "",
+  },
+  {
+    id: 7,
+    name: "Squirtle",
+    type: "Water",
+    level: 18,
+    abilities: "Torrent/Rain Dish",
+    image: "",
+  },
+  {
+    id: 10,
+    name: "Caterpie",
+    type: "Bug",
+    level: 13,
+    abilities: "Shield Dust/Run Away",
+    image: "",
+  },
+  {
+    id: 16,
+    name: "Pidgey",
+    type: "Normal/Flying",
+    level: 20,
+    abilities: "Keen Eye/Tangled Feet/Bug Pecks",
+    image: "",
+  },
+  {
+    id: 19,
+    name: "Rattata",
+    type: "Normal",
+    level: 15,
+    abilities: "Run Away/Guts/Hustle",
+  },
+  {
+    id: 27,
+    name: "Sandshrew",
+    type: "Ground",
+    level: 21,
+    abilities: "Sand Veil/Sand Rush",
+  },
+  {
+    id: 29,
+    name: "Nidoran(F)",
+    type: "Poison",
+    level: 22,
+    abilities: "Poison Point/Rivalry/Hustle",
+  },
+  {
+    id: 32,
+    name: "Nidoran(M)",
+    type: "Poison",
+    level: 22,
+    abilities: "Poison Point/Rivalry/Hustle",
+  },
+  {
+    id: 35,
+    name: "Clefairy",
+    type: "Fairy",
+    level: 25,
+    abilities: "Cute Charm/Magic Guard/Friend Guard",
+  },
+  {
+    id: 37,
+    name: "Vulpix",
+    type: "Fire",
+    level: 26,
+    abilities: "Flash Fire/Drought",
+  },
+  {
+    id: 52,
+    name: "Meowth",
+    type: "Normal",
+    level: 17,
+    abilities: "Pick Up/Technician/Unnerve",
+  },
+  {
+    id: 54,
+    name: "Psyduck",
+    type: "Water",
+    level: 22,
+    abilities: "Damp/Cloud Nine/Swift Swim",
+  },
+  //current count 14 pokemon
+  {
+    id: 130,
+    name: "Gyrados",
+    type: "Water/Flying",
+    level: 26,
+    abilities: "Intimidate/Moxie",
+  },
+  {
+    id: 133,
+    name: "Eevee",
+    type: "Normal",
+    level: 24,
+    abilities: "Run Away/Adaptability/Anticipation",
+  },
+  {
+    id: 147,
+    name: "Dratini",
+    type: "Dragon",
+    level: 21,
+    abilities: "Shed Skin/Marvel Scale",
+  },
+  {
+    id: 106,
+    name: "Hitmonlee",
+    type: "Fighting",
+    level: 27,
+    abilities: "Limber/Reckless/Unburden",
+  },
+  {
+    id: 56,
+    name: "Mankey",
+    type: "Fighting",
+    level: 24,
+    abilities: "Vital Spirit/Anger Point/Defiant",
+  },
+  {
+    id: 74,
+    name: "Geodude",
+    type: "Rock/Ground",
+    level: 21,
+    abilities: "Rock Head/Sturdy/Sand Veil",
+  },
+];
 //20 total
 
 /* array.forEach(function(item){
@@ -193,17 +190,14 @@ const pokemonCard = document.getElementById("pokemonCards");
 
 const searchPokemon = document.getElementById("searchPokemon");
 
-
-
 //const ability = pokemon.abilities.split("/"); //error -forgot to add a pokemon variable, maybe make a display function and put it there instead
-// loop through pokemon database to display it 
+// loop through pokemon database to display it
 
 //comment out because when ran it shows a long list of pokemon. Just wanted it displayed when button is pressed.
 // Gen1poke.forEach((pokemon) =>{
 //    // need to create a pokemon info card
-    
+
 //     const card = document.createElement("div");
-    
 
 //     const name = document.createElement("h2");
 //     name.textContent = pokemon.name;
@@ -223,109 +217,107 @@ const searchPokemon = document.getElementById("searchPokemon");
 //     });
 // need a button to click through each pokemon
 
-    // function displayPokemon(pokemon) {
-    //     console.log(pokemon.name);
-    // }
-    function displayPokemon(pokemon) {
-    
-    pokemonCard.style.display = "block";
+// function displayPokemon(pokemon) {
+//     console.log(pokemon.name);
+// }
+function displayPokemon(pokemon) {
+  pokemonCard.style.display = "block";
 
-    pokemonCard.innerHTML = "";
+  pokemonCard.innerHTML = "";
 
-    const name = document.createElement("h2");
-    name.textContent = pokemon.name;
+  const name = document.createElement("h2");
+  name.textContent = pokemon.name;
 
-    const type = document.createElement("p");
-    type.textContent = `Type: ${pokemon.type}`;
+  const type = document.createElement("p");
+  type.textContent = `Type: ${pokemon.type}`;
 
-    const level = document.createElement("p");
-    level.textContent = `Level: ${pokemon.level}`;
+  const level = document.createElement("p");
+  level.textContent = `Level: ${pokemon.level}`;
 
-    const abilities = document.createElement("p");
-    abilities.textContent =
-        `Abilities: ${pokemon.abilities}`;
-    
-    const addButton = document.createElement("button");
-    addButton.textContent = "Add To Team";
+  const abilities = document.createElement("p");
+  abilities.textContent = `Abilities: ${pokemon.abilities}`;
 
-    addButton.addEventListener("click", (e) => addTeam(pokemon));
-    pokemonCard.append(name, type, level, abilities, addButton);
+  const addButton = document.createElement("button");
+  addButton.textContent = "Add To Team";
 
-   
+  addButton.addEventListener("click", (e) => addTeam(pokemon));
+  pokemonCard.append(name, type, level, abilities, addButton);
 }
 
 let team = [];
 
 function addTeam(pokemon) {
-    if (team.length >=6) {
-        alert("Your team is full")
+    if (team.some(p => p.id === pokemon.id)) { // BOM req...checks if pokemon is laready in team and sends alert
+    alert("Pokemon already in team!");
+    return;
+}
+  if (team.length >= 6) {
+    alert("Your team is full");
 
-        return;
-    }
-    team.push(pokemon);
-//  const removeButton = document.createElement("button");
-//  removeButton.addEventListener("click", (e) => {
-//     team = team.filter(p => p.id !== pokemon.id); // *note to future self* using p as a variable for filter method
-//  })
-    displayTeam();
+    return;
+    
+  }
+  team.push(pokemon);
+  //  const removeButton = document.createElement("button");
+  //  removeButton.addEventListener("click", (e) => {
+  //     team = team.filter(p => p.id !== pokemon.id); // *note to future self* using p as a variable for filter method
+  //  })
+  displayTeam();
 }
 
 function displayTeam() {
-    teamContainer.innerHTML = `<h2>My Team (${team.length}/6)</h2>`;
-    const fragment = document.createDocumentFragment(); //requirement
+  teamContainer.innerHTML = `<h2>My Team (${team.length}/6)</h2>`;
 
-    team.forEach((pokemon) => {
+  const fragment = document.createDocumentFragment(); //requirement
 
-         const teamMember = document.createElement("div");
-           const name = document.createElement("p");
+  team.forEach((pokemon) => {
+    const teamMember = document.createElement("div");
 
-        name.textContent = pokemon.name;
-        fragment.appendChild(teamMember)
-        const removeButton = document.createElement("button");
-        removeButton.textContent = "Remove";
+    const name = document.createElement("p");
 
-        removeButton.addEventListener("click", (e) => {
-            team = team.filter(p => p.id !== pokemon.id);
-            displayTeam();
-        
+    name.textContent = pokemon.name;
 
-        teamContainer.appendChild(teamMember);
-        teamMember.append(name, removeButton);
-        
-   });
-    }
-)}
+
+    const removeButton = document.createElement("button");
+    removeButton.textContent = "Remove";
+
+    removeButton.addEventListener("click", () => {
+      team = team.filter(p => p.id !== pokemon.id);
+      displayTeam();
+});
+      teamMember.append(name, removeButton);
+
+      fragment.appendChild(teamMember);
+    
+  });
+  teamContainer.appendChild(fragment);
+}
 //***figure out why pokeon isnt showing in team after fixing the remove button issue
 // creating button for pokemon
-    Gen1poke.forEach((pokemon) => {
-        const button = document.createElement("button");
+Gen1poke.forEach((pokemon) => {
+  const button = document.createElement("button");
 
-        button.textContent = pokemon.name;
+  button.textContent = pokemon.name;
 
-        button.addEventListener("click", () =>{
-            displayPokemon(pokemon); // error forgot to add the display function
-        });
-        console.log(pokemonList);
-        pokemonList.appendChild(button)
-    });
+  button.addEventListener("click", () => {
+    displayPokemon(pokemon); // error forgot to add the display function
+  });
+  console.log(pokemonList);
+  pokemonList.appendChild(button);
+});
 
 // second event listener req
-    searchPokemon.addEventListener("input", (e) => {
+searchPokemon.addEventListener("input", (e) => {
+  const search = searchPokemon.value.toLowerCase();
 
-        const search = searchPokemon.value.toLowerCase();
+  console.log(search);
+});
+//  :(
+// Search how to not have 20 buttons and 20 cards. Want one card to update when pokemon button is clicked.
 
-        console.log(search);
-    })
-   //  :( 
-    // Search how to not have 20 buttons and 20 cards. Want one card to update when pokemon button is clicked.
-
-    /* create other html elements
+/* create other html elements
      card = div
      name = h2
      type = p 
      level = p
      abilities = p */
-
-    
-
-
