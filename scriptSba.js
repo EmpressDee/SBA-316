@@ -276,15 +276,26 @@ function displayTeam() {
 
     team.forEach((pokemon) => {
 
-        const teamMember = document.createElement("p");
+         const teamMember = document.createElement("div");
+           const name = document.createElement("p");
 
-        teamMember.textContent = pokemon.name;
+        name.textContent = pokemon.name;
         fragment.appendChild(teamMember)
+        const removeButton = document.createElement("button");
+        removeButton.textContent = "Remove";
+
+        removeButton.addEventListener("click", (e) => {
+            team = team.filter(p => p.id !== pokemon.id);
+            displayTeam();
+        
 
         teamContainer.appendChild(teamMember);
-    })
-}
-
+        teamMember.append(name, removeButton);
+        
+   });
+    }
+)}
+//***figure out why pokeon isnt showing in team after fixing the remove button issue
 // creating button for pokemon
     Gen1poke.forEach((pokemon) => {
         const button = document.createElement("button");
@@ -294,6 +305,7 @@ function displayTeam() {
         button.addEventListener("click", () =>{
             displayPokemon(pokemon); // error forgot to add the display function
         });
+        console.log(pokemonList);
         pokemonList.appendChild(button)
     });
 
