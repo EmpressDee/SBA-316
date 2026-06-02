@@ -188,8 +188,8 @@ const teamContainer = document.getElementById("teamContainer");
 const pokemonContainer = document.getElementById("pokemonContainer");
 
 //const container = document.getElementById("pokemonContainer")
-const pokemonList = document.getElementById("pokeList");
-const pokemonCard = document.getElementById("pokeCards");
+const pokemonList = document.getElementById("pokemonList");
+const pokemonCard = document.getElementById("pokemonCards");
 
 const searchPokemon = document.getElementById("searchPokemon");
 
@@ -227,6 +227,8 @@ const searchPokemon = document.getElementById("searchPokemon");
     //     console.log(pokemon.name);
     // }
     function displayPokemon(pokemon) {
+    
+    pokemonCard.style.display = "block";
 
     pokemonCard.innerHTML = "";
 
@@ -249,12 +251,7 @@ const searchPokemon = document.getElementById("searchPokemon");
     addButton.addEventListener("click", (e) => addTeam(pokemon));
     pokemonCard.append(name, type, level, abilities, addButton);
 
-    pokemonCard.append(
-        name,
-        type,
-        level,
-        abilities
-    );
+   
 }
 
 let team = [];
@@ -266,15 +263,15 @@ function addTeam(pokemon) {
         return;
     }
     team.push(pokemon);
- const removeButton = document.createElement("button");
- removeButton.addEventListener("click", (e) => {
-    team = team.filter(p => p.id !== pokemon.id); // *note to future self* using p as a variable for filter method
- })
+//  const removeButton = document.createElement("button");
+//  removeButton.addEventListener("click", (e) => {
+//     team = team.filter(p => p.id !== pokemon.id); // *note to future self* using p as a variable for filter method
+//  })
     displayTeam();
 }
 
 function displayTeam() {
-    teamContainer.innerHTML = "";
+    teamContainer.innerHTML = `<h2>My Team (${team.length}/6)</h2>`;
     const fragment = document.createDocumentFragment(); //requirement
 
     team.forEach((pokemon) => {
@@ -282,6 +279,7 @@ function displayTeam() {
         const teamMember = document.createElement("p");
 
         teamMember.textContent = pokemon.name;
+        fragment.appendChild(teamMember)
 
         teamContainer.appendChild(teamMember);
     })
